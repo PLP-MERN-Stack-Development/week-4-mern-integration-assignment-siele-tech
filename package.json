@@ -1,0 +1,21 @@
+{
+  "name": "mern-blog",
+  "version": "1.0.0",
+  "description": "A full-stack blog application built with the MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "install-all": "npm run setup",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["mern", "blog", "react", "express", "mongodb", "node"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+} 
